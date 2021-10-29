@@ -23,6 +23,6 @@ services:
       ADMINER_DEFAULT_DB_HOST: mariadb         
     restart: always
     ports:
-      - 7777:8080
+      - 8080:8080
 volumes:
   db_data:
