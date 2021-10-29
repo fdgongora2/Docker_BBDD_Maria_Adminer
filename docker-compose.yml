@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.3"
 services:
   mariadb:
     image: mariadb:latest
@@ -8,19 +8,21 @@ services:
       MYSQL_USER: adminer
       MYSQL_PASSWORD: adminer
       MYSQL_DATABASE: noinch
+      MARIADB_ROOT_PASSWORD: adminer
     ports:
-      - 5555:3306
+      - 3306:3306
     volumes:
-      - db_data:/var/lib/mysql
-      - db_scripts_sql:/docker-entrypoint-initdb.d
+      - ./db_data:/var/lib/mysql:rw
+      - ./db_scripts_sql/mysql.sql:/docker-entrypoint-initdb.d/mysql.sql:rw
   adminer:
     image: adminer:latest
     container_name: adminer
     environment:
-      ADMINER_DEFAULT_SERVER: mariadb
+      ADMINER_DEFAULT_SERVER: mariadb     
+      ADMINER_DEFAULT_DB_DRIVER: mysql
+      ADMINER_DEFAULT_DB_HOST: mariadb         
     restart: always
     ports:
       - 7777:8080
 volumes:
   db_data:
-  db_scripts_sql:
