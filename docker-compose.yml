@@ -3,7 +3,7 @@ services:
   mariadb:
     image: mariadb:latest
     container_name: mariadb
-    restart: always
+#   restart: always
     environment:
       MYSQL_USER: adminer
       MYSQL_PASSWORD: adminer
@@ -21,7 +21,7 @@ services:
       ADMINER_DEFAULT_SERVER: mariadb     
       ADMINER_DEFAULT_DB_DRIVER: mysql
       ADMINER_DEFAULT_DB_HOST: mariadb         
-    restart: always
+#   restart: always
     ports:
       - 8080:8080
 volumes:
