@@ -1,4 +1,35 @@
 # Docker_BBDD_Maria_Adminer
 Docker-compose con contenedores que crean una BBDD Mariadb y un frontend Adminer para poder trabajar con ella en http://localhost:8080. 
 
-Tras crear el servidor se crea una base de datos de ejemplo con la estructura que muestra el documento MySQL-Sample-Database-Diagram-PDF-A4.pdf .
+   Usuario - adminer
+   Contraseña - adminer
+
+En el servidor de BBDD (MariaDB) se crea una base de datos de ejemplo con la estructura que muestra el documento MySQL-Sample-Database-Diagram-PDF-A4.pdf .
+
+INSTALACIÓN DE DOCKER Y DOCKER-COMPOSE
+
+https://docs.docker.com/get-docker/
+
+En Ubuntu se puede instalar de forma fácil ejecutando el comando:
+
+    sudo apt install docker-ce docker-ce-cli containerd.io docker-compose
+
+
+EJECUCIÓN DE LOS CONTENEDORES
+
+Descarga del repositorio GIT
+
+    > git clone https://github.com/fdgongora2/Docker_BBDD_Maria_Adminer.git
+
+Nos movemos al directorio que contiene el fichero "docker-compose.yml"
+
+    > cd Docker_BBDD_Maria_Adminer
+
+Ejecutamos los contenedores
+
+    > docker-compose up -d   (Es posible que por la configuración se deba usar sudo)
+
+Parar los contenedores 
+
+    > docker-compose down
+
