@@ -6,16 +6,16 @@ Docker-compose con contenedores que crean una BBDD Mariadb y un frontend Adminer
 
 En el servidor de BBDD (MariaDB) se crea una base de datos de ejemplo con la estructura que muestra el documento MySQL-Sample-Database-Diagram-PDF-A4.pdf .
 
-INSTALACIÓN DE DOCKER Y DOCKER-COMPOSE
+**1. INSTALACIÓN DE DOCKER Y DOCKER-COMPOSE**
 
 https://docs.docker.com/get-docker/
 
 En Ubuntu se puede instalar de forma fácil ejecutando el comando:
-
+``
     sudo apt install docker-ce docker-ce-cli containerd.io docker-compose
+``
 
-
-EJECUCIÓN DE LOS CONTENEDORES
+**2. EJECUCIÓN DE LOS CONTENEDORES**
 
 Descarga del repositorio GIT
 
@@ -33,3 +33,4 @@ Parar los contenedores
 
     > docker-compose down
 
+FDGA @30/10/2021
