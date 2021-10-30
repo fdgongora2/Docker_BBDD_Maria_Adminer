@@ -6,6 +6,9 @@ Docker-compose con contenedores que crean una BBDD Mariadb y un frontend Adminer
 
 En el servidor de BBDD (MariaDB) se crea una base de datos de ejemplo con la estructura que muestra el documento MySQL-Sample-Database-Diagram-PDF-A4.pdf .
 
+La BBDD y el esquema se han descargado de https://www.mysqltutorial.org/mysql-sample-database.aspx . Agradezco el trabajo realizado por su autor.
+
+
 **1. INSTALACIÓN DE DOCKER Y DOCKER-COMPOSE**
 
 https://docs.docker.com/get-docker/
