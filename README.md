@@ -36,4 +36,4 @@ Parar los contenedores
 
     > docker-compose down
 
-FDGA @30/10/2021
+FDGA @1/11/2021
