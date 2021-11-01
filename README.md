@@ -1,5 +1,5 @@
 # Docker_BBDD_Maria_Adminer
-Docker-compose con contenedores que crean una BBDD Mariadb y un frontend Adminer para poder trabajar con ella en http://localhost:8080. 
+Docker-compose con contenedores que crean una BBDD Mariadb en el puerto 5555 y un frontend Adminer para poder trabajar con ella en http://localhost:8080. 
 
    Usuario - adminer
    Contraseña - adminer
