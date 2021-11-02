@@ -15,7 +15,7 @@ https://docs.docker.com/get-docker/
 
 En Ubuntu se puede instalar de forma fácil ejecutando el comando:
 
-    > sudo apt install docker-ce docker-ce-cli containerd.io docker-compose
+    > sudo apt install docker docker-compose
 
 
 **2. EJECUCIÓN DE LOS CONTENEDORES**
