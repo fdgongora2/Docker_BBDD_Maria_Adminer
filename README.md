@@ -6,7 +6,7 @@ Docker-compose con contenedores que crean una BBDD Mariadb en el puerto 5555 y u
 
 En el servidor de BBDD (MariaDB) se crea una base de datos de ejemplo con la estructura que muestra el documento MySQL-Sample-Database-Diagram-PDF-A4.pdf .
 
-La BBDD y el esquema se han descargado de https://www.mysqltutorial.org/mysql-sample-database.aspx . El autor ha dado su permiso para su uso y aprovecho para  agradecer su trabajo .
+La BBDD y el esquema se han descargado de https://www.mysqltutorial.org/mysql-sample-database.aspx . El autor ha dado permiso para su uso y aprovecho para  agradecer su trabajo.
 
 
 **1. INSTALACIÓN DE DOCKER Y DOCKER-COMPOSE**
